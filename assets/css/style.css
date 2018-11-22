@@ -1,0 +1,242 @@
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* Full HTML Tag Call */
+html {
+    height: 100%;
+}
+
+/* Body Tag Call */
+body {
+    display: flex;
+    overflow: auto; 
+    margin: 0px; /* removes default style */
+    height: 100%;
+    min-height: 100%;
+    background-image: url("../images/alwaysgrey.png");
+    background-repeat: repeat;
+    background-color: #e6e6e6;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+
+/* <Header> Class */
+.tagheader {
+    flex: 0 0 auto;
+    margin: 0px;
+    background-color: white;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 0px 0px 3px 0px; /* Bottom Edge Border */
+}
+
+/* Nav Link Class */
+.navlink {
+    color: #777777;
+    background-color: white;
+    float: right;
+    width: 10%;
+    padding: 30px;
+    text-align: center;
+    font-weight: 500;
+    border-left-color: #cccccc;
+    border-left-style: solid;
+    border-left-width: 1px;
+    margin-bottom: 0;
+    text-decoration: none; /* Removes Link Underline Styling */
+}
+
+/* Nav Bar Class */
+.navbar {
+    margin-inline-end: 10%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /* Removes Bullet Points from Nav Bar <ul> */
+    display: inline;
+    white-space: nowrap; /* Prevents nav button text from wrapping on smaller screens */
+    text-overflow: hidden; /* Hides overflow text on nav buttons NOTWORKING? */
+    font-size: 15px;
+}
+
+/* When hovering a link on NavBar, change background-color to alternate */
+
+.navbar a:hover {
+    background-color: #cccccc;
+}
+
+/* NavActive Class */
+.navactive {
+    width: 10%;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 30px;
+    float: right;
+    font-weight: 700;
+    margin-bottom: 0;
+    text-align: center;
+    /* Active button border styling */
+    border-left-color: #e6e6e6;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: #e6e6e6;
+    border-right-style: solid;
+    border-right-width: 1px;
+    text-decoration: none; /* Removes Link Underline Styling */
+}
+
+/* Nav Property ID */
+#navbarproperties {
+    background-color: white;
+    margin: 0px;
+}
+
+
+/* Removes the border on the far left Navlink for styling purposes */
+#linkindex {
+    border-left-width: 0px;
+}
+
+/* Adds margin on far right Navlink */
+#linkcontact {
+    margin-inline-end: 10%;
+}
+
+
+/* Info Header Class */
+.info_header {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 28.5px;
+    margin-inline-start: 10%;
+    font-weight: 900;
+    font-size: 18px;
+    margin-bottom: 0;
+    position: absolute;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+/* MSGSUBMIT ID */
+#msgsubmit {
+    background-color: #4aaaa5;
+    color: white;
+    padding: 20px;
+    font-weight: 900;
+    margin-bottom: 0;
+    display: block;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* Changes color of MSGSUBMIT button when hovered */
+#msgsubmit:hover {
+    background-color: #cccccc;
+}
+
+/* Main Class */
+.main {
+    flex: 1 0 auto;
+    margin: 5% 10% 5% 10%;
+    padding: 30px;
+    background-color: white;
+    border-style: solid;
+    border-color: #dddddd;
+    border-width: 2px;
+}
+
+/* Paragraph Text Class */
+.ptext {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* H2 ID */
+.header2 {
+    border-style: solid;
+    border-color: #cccccc;
+    color: #4aaaa5;
+    padding: 0px 0px 20px 0px;
+    border-width: 0px 0px 3px 0px;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+
+.galleryimg {
+    padding: 10px;
+}
+
+/* Headshot Photo ID */
+#headshot {
+    float: left;
+    margin: 30px;
+    height: 15%;
+    width: 15%;
+    min-width: 180px;
+    min-height: 235px;
+}
+
+/* Contact Form ID */
+#contactform {
+    width: 100%;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* Message Line Class */
+.msgline {
+    width: 100%;
+    display: block;
+}
+
+/* Message Box ID */
+#msgbox {
+    width: 100%;
+    height: 250px;
+    display: block;
+}
+
+.gallerycontent {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.galstyle {
+    text-align: center;
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.galtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4aaaa5;
+    padding: 6px;
+}
+
+
+/* Sticky Footer Class */
+.footer {
+    border-top: 8px solid #4aaaa5;
+    padding: 20px 100px 20px 100px;
+    background-color: slategrey;
+    text-align: center;
+    flex: none;
+    flex-shrink: 0;
+    color: white;
+    margin-bottom: 0;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}

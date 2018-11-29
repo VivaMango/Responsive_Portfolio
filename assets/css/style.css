@@ -269,15 +269,28 @@ body {
         text-align: center;
         position: static;
     }
+    .navactive {
+        height: auto;
+    }
     #linkcontact {
-        margin-inline-end: 0;
-        display: flex;
+        margin-inline-end: 0; /*Removing some style for larger pages */
+        order: 2; 
+        flex-grow: 1;
     }
     #linkindex {
-        margin-inline-start: 0;
-        display: flex;
+        margin-inline-start: 0; /*Removing some style for larger pages */
+        order: 1;
+        flex-grow: 1;
+        
     }
     #linkportfolio {
-        display: flex;
+        order: 3;
+        flex-grow: 1;
+    }
+    .navlink {
+        float: left;
+    }
+    .navactive {
+        float: left;
     }
 }

@@ -251,14 +251,33 @@ body {
 
 @media screen and (max-width: 768px) {
     body {
-        background-color: lavender;
+        background-color: purple;
     }
 }
 @media screen and (max-width: 640px) {
     body {
-        background-color: lavender;
+        background-color: lightskyblue;
         }
-    .navbarproperties {
-            display: block;
+    .navbar {
+            content: "";
+            clear: both;
+            display: block; 
+            float: none;
         }
+    .info_header {
+        margin-inline-start: 0;
+        text-align: center;
+        position: static;
+    }
+    #linkcontact {
+        margin-inline-end: 0;
+        display: flex;
+    }
+    #linkindex {
+        margin-inline-start: 0;
+        display: flex;
+    }
+    #linkportfolio {
+        display: flex;
+    }
 }

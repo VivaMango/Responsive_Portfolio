@@ -1,11 +1,3 @@
-/* Clearfix */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
 /* Full HTML Tag Call */
 html {
     height: 100%;
@@ -13,7 +5,7 @@ html {
 
 /* Body Tag Call */
 body {
-    display: flex;
+    /* display: flex; */
     overflow: auto; 
     margin: 0px; /* removes default style */
     height: 100%;
@@ -21,14 +13,14 @@ body {
     background-image: url("../images/alwaysgrey.png");
     background-repeat: repeat;
     background-color: #e6e6e6;
-    flex-direction: column;
-    flex-shrink: 0;
+    /* flex-direction: column; */
+    /* flex-shrink: 0; */
 }
 
 
 /* <Header> Class */
 .tagheader {
-    flex: 0 0 auto;
+    /* flex: 0 0 auto; */
     margin: 0px;
     background-color: white;
     border-style: solid;
@@ -40,7 +32,7 @@ body {
 .navlink {
     color: #777777;
     background-color: white;
-    float: right;
+    /* float: right; */
     width: 10%;
     padding: 30px;
     text-align: center;
@@ -58,9 +50,9 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none; /* Removes Bullet Points from Nav Bar <ul> */
-    display: inline;
+    /* display: inline; */
     white-space: nowrap; /* Prevents nav button text from wrapping on smaller screens */
-    text-overflow: hidden; /* Hides overflow text on nav buttons NOTWORKING? */
+    /* text-overflow: hidden; Hides overflow text on nav buttons NOTWORKING? */
     font-size: 15px;
 }
 
@@ -76,7 +68,7 @@ body {
     background-color: #4aaaa5;
     color: white;
     padding: 30px;
-    float: right;
+    /* float: right; */
     font-weight: 700;
     margin-bottom: 0;
     text-align: center;
@@ -117,7 +109,7 @@ body {
     font-weight: 900;
     font-size: 18px;
     margin-bottom: 0;
-    position: absolute;
+    /* position: absolute; */
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
 
@@ -139,7 +131,7 @@ body {
 
 /* Main Class */
 .main {
-    flex: 1 0 auto;
+    /* flex: 1 0 auto; */
     margin: 5% 10% 5% 10%;
     padding: 30px;
     background-color: white;
@@ -161,7 +153,7 @@ body {
     color: #4aaaa5;
     padding: 0px 0px 20px 0px;
     border-width: 0px 0px 3px 0px;
-    display: block;
+    /* display: block; */
     font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
@@ -234,8 +226,8 @@ body {
     padding: 20px 100px 20px 100px;
     background-color: slategrey;
     text-align: center;
-    flex: none;
-    flex-shrink: 0;
+    /* flex: none; */
+    /* flex-shrink: 0; */
     color: white;
     margin-bottom: 0;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -258,16 +250,16 @@ body {
     body {
         background-color: lightskyblue;
         }
-    .navbar {
-            content: "";
-            clear: both;
-            display: block; 
-            float: none;
-        }
+    /* .navbar { */
+            /* content: ""; */
+            /* clear: both; */
+            /* display: block;  */
+            /* float: none; */
+        /* } */
     .info_header {
         margin-inline-start: 0;
         text-align: center;
-        position: static;
+        /* position: static; */
     }
     .navactive {
         height: auto;
@@ -286,11 +278,5 @@ body {
     #linkportfolio {
         order: 3;
         flex-grow: 1;
-    }
-    .navlink {
-        float: left;
-    }
-    .navactive {
-        float: left;
-    }
+    } 
 }

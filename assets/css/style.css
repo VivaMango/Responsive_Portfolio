@@ -6,7 +6,7 @@ html {
 /* Body Tag Call */
 body {
     /* display: flex; */
-    overflow: auto; 
+    /* overflow: auto;  */
     margin: 0px; /* removes default style */
     height: 100%;
     min-height: 100%;
@@ -33,7 +33,7 @@ body {
     color: #777777;
     background-color: white;
     /* float: right; */
-    width: 10%;
+    /* width: 10%; */
     padding: 30px;
     text-align: center;
     font-weight: 500;
@@ -51,9 +51,12 @@ body {
     padding: 0;
     list-style-type: none; /* Removes Bullet Points from Nav Bar <ul> */
     /* display: inline; */
-    white-space: nowrap; /* Prevents nav button text from wrapping on smaller screens */
+    /* Prevents nav button text from wrapping on smaller screens not needed with flex i dont think */
     /* text-overflow: hidden; Hides overflow text on nav buttons NOTWORKING? */
     font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
 
 /* When hovering a link on NavBar, change background-color to alternate */
@@ -64,7 +67,7 @@ body {
 
 /* NavActive Class */
 .navactive {
-    width: 10%;
+    /* width: 10%; */
     background-color: #4aaaa5;
     color: white;
     padding: 30px;
@@ -91,12 +94,21 @@ body {
 
 /* Removes the border on the far left Navlink for styling purposes */
 #linkindex {
-    border-left-width: 0px;
+    /* border-left-width: 0px; */
+    order: 3; /* TOOK WAY TOO LONG TO REALIZE ORDER WORKS BACKWARDS WHEN USING JUSTIFY FLEX-END */
+    
 }
 
 /* Adds margin on far right Navlink */
 #linkcontact {
-    margin-inline-end: 10%;
+    /* margin-inline-end: 10%; */
+    order: 1; /* TOOK WAY TOO LONG TO REALIZE ORDER WORKS BACKWARDS WHEN USING JUSTIFY FLEX-END */
+    
+}
+
+#linkportfolio {
+    order: 2; /* TOOK WAY TOO LONG TO REALIZE ORDER WORKS BACKWARDS WHEN USING JUSTIFY FLEX-END */
+    
 }
 
 
@@ -112,6 +124,7 @@ body {
     /* position: absolute; */
     font-family: 'Georgia', Times, 'Times New Roman', serif;
 }
+
 
 /* MSGSUBMIT ID */
 #msgsubmit {
@@ -196,20 +209,21 @@ body {
     display: block;
 }
 
+/* trying to use clearfix without the ::afterpseudoclass */
 .gallerycontent {
     content: "";
     clear: both;
     display: table;
 }
 
-
+/* styling for each gallery image  */
 .galstyle {
     text-align: center;
     color: white;
     position: relative;
     display: inline-block;
 }
-
+/* text on top of portfolio gallery images */
 .galtext {
     position: absolute;
     top: 50%;
@@ -234,7 +248,7 @@ body {
 }
 
 
-/* MEDIA QUERIES BELOW THIS LINE */
+/* MEDIA QUERIES BELOW THIS LINE
 @media screen and (max-width: 980px) {
     body {
         background-color: lightgreen;
@@ -256,27 +270,27 @@ body {
             /* display: block;  */
             /* float: none; */
         /* } */
-    .info_header {
+    /* .info_header {
         margin-inline-start: 0;
         text-align: center;
         /* position: static; */
-    }
+    /* }
     .navactive {
         height: auto;
     }
     #linkcontact {
         margin-inline-end: 0; /*Removing some style for larger pages */
-        order: 2; 
+        /* order: 2; 
         flex-grow: 1;
     }
     #linkindex {
         margin-inline-start: 0; /*Removing some style for larger pages */
-        order: 1;
-        flex-grow: 1;
+        /* order: 1;
+        flex-grow: 1; */
         
-    }
-    #linkportfolio {
+    /* } */
+    /* #linkportfolio {
         order: 3;
-        flex-grow: 1;
-    } 
-}
+        flex-grow: 1; */
+    /* }  */
+/* }  */
